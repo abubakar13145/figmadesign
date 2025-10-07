@@ -4,6 +4,9 @@
   padding: 20px;
   font-family: 'Inter', sans-serif;
   color: #413A36;
+  background: #EFEBE2;
+  min-height: 1103px;
+  position: relative;
 }
 
 /* Location Section */
