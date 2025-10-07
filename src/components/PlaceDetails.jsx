@@ -3,6 +3,14 @@ import { Text, RawImg, CustomCode } from '@components';
 import './PlaceDetails.css';
 
 export default function PlaceDetails() {
+  const leftArrowSvg = `<svg id="6:1313" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.7256 43.1405L0.999583 22.4145L22.5546 0.859478" stroke="#413A36"></path>
+</svg>`;
+
+  const rightArrowSvg = `<svg id="6:1324" width="44" height="51" viewBox="0 0 44 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.4531 7.58675L43.1784 28.312L21.6241 49.8664" stroke="#413A36"></path>
+</svg>`;
+
   const audioSvg = `<svg id="6:1269" width="90" height="119" viewBox="0 0 90 119" fill="none" xmlns="http://www.w3.org/2000/svg" class="audio-artifact">
 <path d="M37.7476 56.7363L37.7476 33.3535L57.9985 45.0449L37.7476 56.7363Z" stroke="#413A36"></path>
 <circle cx="45" cy="45.0449" r="44.5" stroke="#413A36"></circle>
@@ -18,7 +26,24 @@ export default function PlaceDetails() {
   return (
     <>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css2?family=Styrene+A+Trial:wght@400;700&family=Styrene+B+Trial:wght@400;500&display=swap" rel="stylesheet" />
       <div className="place-details-container">
+        <header className="place-header">
+          <button className="nav-arrow-btn" aria-label="Previous">
+            <CustomCode code={leftArrowSvg} />
+          </button>
+          <div className="place-title-group">
+            <div className="place-date-range">
+              <span className="date-year">1920</span>
+              <span className="date-separator">—</span>
+              <span className="date-year">1925</span>
+            </div>
+            <h1 className="place-main-title">Saint Lawrence School</h1>
+          </div>
+          <button className="nav-arrow-btn" aria-label="Next">
+            <CustomCode code={rightArrowSvg} />
+          </button>
+        </header>
         <section className="location-section">
           <h2 className="section-title">Location</h2>
           <div className="location-coords">
