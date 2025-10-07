@@ -1,2 +1,13 @@
-.app-shell { padding: 16px; }
-.timeline-svg { width: 666px; height: 92px; }
+body {
+  margin: 0;
+  background: #EFEBE2;
+}
+
+.app-shell {
+  padding: 0;
+}
+
+.timeline-svg {
+  width: 666px;
+  height: 92px;
+}
