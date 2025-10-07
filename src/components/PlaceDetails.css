@@ -1,12 +1,80 @@
 .place-details-container {
-  max-width: 538px;
+  max-width: 621px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0;
   font-family: 'Inter', sans-serif;
   color: #413A36;
   background: #EFEBE2;
   min-height: 1103px;
   position: relative;
+}
+
+/* Header Navigation */
+.place-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 538px;
+  height: 150px;
+  margin: 0 auto;
+  padding: 0 41px;
+}
+
+.nav-arrow-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.place-title-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.place-date-range {
+  display: flex;
+  height: 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
+.date-year {
+  padding: 0 10px;
+  color: #413A36;
+  font-family: 'Styrene B Trial', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.date-separator {
+  color: #413A36;
+  font-family: 'Styrene A Trial', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.39px;
+  text-transform: uppercase;
+}
+
+.place-main-title {
+  color: #413A36;
+  text-align: center;
+  font-family: 'Styrene A Trial', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
 }
 
 /* Location Section */
