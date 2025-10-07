@@ -77,6 +77,12 @@
   margin: 0;
 }
 
+/* Content Sections */
+section {
+  padding-left: 41px;
+  padding-right: 41px;
+}
+
 /* Location Section */
 .location-section {
   display: flex;
