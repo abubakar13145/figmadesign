@@ -1,0 +1,66 @@
+/* DropdownSelect: compact white dropdown with border and caret */
+.dropdown-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 347px;
+  min-height: 30px;
+  padding: 5px 7px;
+  gap: 11px;
+  border: 1px solid #413A36;
+  background: #FFF;
+  box-sizing: border-box;
+}
+
+.dropdown-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+}
+
+.dropdown-label-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.dropdown-label-text {
+  flex: 1 0 0;
+  color: #413A36;
+  font-family: 'Styrene B Trial', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dropdown-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 17px;
+}
+
+.progress-ring {
+  display: inline-flex;
+  width: 13px;
+  height: 13px;
+}
+
+.progress-value {
+  color: #413A36;
+  font-family: 'Styrene B Trial', -apple-system, Roboto, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.dropdown-caret {
+  display: inline-flex;
+  width: 11px;
+  height: 11px;
+}
+
+/* Responsive behavior to avoid overflow */
+@media (max-width: 580px) {
+  .dropdown-select { width: 100%; }
+}

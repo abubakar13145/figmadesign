@@ -45,6 +45,10 @@ export default function PlaceDetails() {
           </button>
         </header>
 
+        <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '10px' }}>
+          <DropdownSelect />
+        </div>
+
         <TimelinePanel />
         <section className="location-section">
           <h2 className="section-title">Location</h2>
