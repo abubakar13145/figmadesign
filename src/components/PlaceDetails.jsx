@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, RawImg, CustomCode, TimelinePanel } from '@components';
+import { Text, RawImg, CustomCode, TimelinePanel, DropdownSelect } from '@components';
 import './PlaceDetails.css';
 
 export default function PlaceDetails() {
@@ -45,7 +45,7 @@ export default function PlaceDetails() {
           </button>
         </header>
 
-        <div style={{ display: 'flex', justifyContent: 'center', paddingTop: '10px' }}>
+        <div className="dropdown-center">
           <DropdownSelect />
         </div>
 
