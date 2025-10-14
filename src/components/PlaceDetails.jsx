@@ -23,11 +23,33 @@ export default function PlaceDetails() {
 <text fill="#413A36" xml:space="preserve" style="white-space: pre" font-family="Styrene B Trial" font-size="14" letter-spacing="0em"><tspan x="1" y="117.987">PDF capt...</tspan></text>
 </svg>`;
 
+  const expandIconSvg = `<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="35.1367" height="35.0775" fill="#FFFEF7"/>
+<path d="M8.0498 8.0498V14.8057H9.25879V10.1055L9.34473 10.1904L15.1299 15.957L15.9834 15.1064L10.1982 9.33984L10.1123 9.25488H14.8271V8.0498H8.0498Z" fill="#413A36" stroke="#FFFEF7" stroke-width="0.1"/>
+<path d="M20.3096 8.04983V9.2549H25.0244L24.9385 9.33986L19.1543 15.1065L20.0078 15.9571L25.792 10.1905L25.8779 10.1055V14.8057H27.0869V8.04983H20.3096Z" fill="#413A36" stroke="#FFFEF7" stroke-width="0.1"/>
+<path d="M9.34473 24.8865L9.25879 24.9715V20.2723H8.0498V27.0272H14.8271V25.8231H10.1123L10.1982 25.7371L15.9834 19.9695L15.1299 19.1189L9.34473 24.8865Z" fill="#413A36" stroke="#FFFEF7" stroke-width="0.1"/>
+<path d="M19.1543 19.9695L24.9385 25.7371L25.0244 25.8231H20.3096V27.0272H27.0869V20.2723H25.8779V24.9715L25.792 24.8865L20.0078 19.1189L19.1543 19.9695Z" fill="#413A36" stroke="#FFFEF7" stroke-width="0.1"/>
+</svg>`;
+
+  const closeIconSvg = `<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="35" height="35" fill="#FFFEF7"/>
+<line x1="8" y1="8" x2="27" y2="27" stroke="#413A36" stroke-width="2"/>
+<line x1="27" y1="8" x2="8" y2="27" stroke="#413A36" stroke-width="2"/>
+</svg>`;
+
   return (
     <>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css2?family=Styrene+A+Trial:wght@400;700&family=Styrene+B+Trial:wght@400;500&display=swap" rel="stylesheet" />
       <div className="place-details-container">
+        <div className="action-icons">
+          <button className="icon-btn" aria-label="Expand">
+            <CustomCode code={expandIconSvg} />
+          </button>
+          <button className="icon-btn" aria-label="Close">
+            <CustomCode code={closeIconSvg} />
+          </button>
+        </div>
         <header className="place-header">
           <button className="nav-arrow-btn" aria-label="Previous">
             <CustomCode code={leftArrowSvg} />
