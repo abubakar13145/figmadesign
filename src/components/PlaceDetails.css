@@ -9,6 +9,29 @@
   position: relative;
 }
 
+/* Action Icons (Expand & Close) */
+.action-icons {
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  z-index: 10;
+}
+
+.icon-btn {
+  display: flex;
+  padding: 0;
+  background: #FFFEF7;
+  border: none;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Header Navigation */
 .place-header {
   display: flex;
